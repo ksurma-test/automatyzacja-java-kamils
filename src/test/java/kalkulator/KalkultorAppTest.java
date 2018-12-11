@@ -1,14 +1,16 @@
 package kalkulator;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayName("Kocurek")
 class KalkultorAppTest {
 
     @Test
-    public void addTestInt() {
+    public void addTwoPositiveIntegers() {
         // arrange
         KalkultorApp kalkultorApp = new KalkultorApp();
 // act
@@ -17,11 +19,10 @@ class KalkultorAppTest {
 //assert
         Assertions.assertEquals(14, suma, "Sprawdź, że dodawanie liczb całkowitych dzialą");
 
-
     }
 
     @Test
-    public void addTestDouble() {
+    public void addTwoPositiveDouble() {
         // arrange
         KalkultorApp kalkultorApp = new KalkultorApp();
 // act
@@ -30,7 +31,7 @@ class KalkultorAppTest {
 //assert
         Assertions.assertEquals(4.23, suma, "Sprawdź, że dodawanie liczb całkowitych dzialą");
 
-
+        Assertions.assertEquals(4.23, suma, 0.0000001,  "Sprawdź, że dodawanie liczb całkowitych dzialą");
     }
 
 }
