@@ -11,9 +11,9 @@ class KalkultorAppTest {
     @Test
     public void addTwoPositiveIntegers() {
         // arrange
-        KalkultorApp kalkultorApp = new KalkultorApp();
+        KalkultorApp calc = new KalkultorApp();
 // act
-        int suma = kalkultorApp.add(1, 13);
+        int suma = calc.add(1, 13);
 
 //assert
         Assertions.assertEquals(14, suma, "Sprawdź, że działa  dodawanie liczb całkowitych");
